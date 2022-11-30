@@ -1,0 +1,15 @@
+C:\Users\malmm\dev\WebFileDownloader\WebFileDownloader\bin\Debug\net6.0\WebFileDownloader.exe
+C:\Users\malmm\dev\WebFileDownloader\WebFileDownloader\bin\Debug\net6.0\WebFileDownloader.deps.json
+C:\Users\malmm\dev\WebFileDownloader\WebFileDownloader\bin\Debug\net6.0\WebFileDownloader.runtimeconfig.json
+C:\Users\malmm\dev\WebFileDownloader\WebFileDownloader\bin\Debug\net6.0\WebFileDownloader.dll
+C:\Users\malmm\dev\WebFileDownloader\WebFileDownloader\bin\Debug\net6.0\WebFileDownloader.pdb
+C:\Users\malmm\dev\WebFileDownloader\WebFileDownloader\obj\Debug\net6.0\WebFileDownloader.csproj.AssemblyReference.cache
+C:\Users\malmm\dev\WebFileDownloader\WebFileDownloader\obj\Debug\net6.0\WebFileDownloader.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\malmm\dev\WebFileDownloader\WebFileDownloader\obj\Debug\net6.0\WebFileDownloader.AssemblyInfoInputs.cache
+C:\Users\malmm\dev\WebFileDownloader\WebFileDownloader\obj\Debug\net6.0\WebFileDownloader.AssemblyInfo.cs
+C:\Users\malmm\dev\WebFileDownloader\WebFileDownloader\obj\Debug\net6.0\WebFileDownloader.csproj.CoreCompileInputs.cache
+C:\Users\malmm\dev\WebFileDownloader\WebFileDownloader\obj\Debug\net6.0\WebFileDownloader.dll
+C:\Users\malmm\dev\WebFileDownloader\WebFileDownloader\obj\Debug\net6.0\refint\WebFileDownloader.dll
+C:\Users\malmm\dev\WebFileDownloader\WebFileDownloader\obj\Debug\net6.0\WebFileDownloader.pdb
+C:\Users\malmm\dev\WebFileDownloader\WebFileDownloader\obj\Debug\net6.0\WebFileDownloader.genruntimeconfig.cache
+C:\Users\malmm\dev\WebFileDownloader\WebFileDownloader\obj\Debug\net6.0\ref\WebFileDownloader.dll
