@@ -1,17 +1,37 @@
 ﻿using System;
+using System.Threading;
+using WebFileDownloader;
 using WebFileDownloader.Classes;
 
 public class Program
 {
+    static WebClientAdapter webClientAdapter = new WebClientAdapter();
+
     public static void Main()
     {
-        DownloadCompleted();
+        webClientAdapter.DownloadCompleted += DownloadCompleted;
         Console.ReadLine();
     }
 
-    static void DownloadCompleted()
+    private static void Download(string url, string destination)
     {
-        WebClientAdapter webClientAdapter = new WebClientAdapter();
-        webClientAdapter.DownloadFile("https://www1.ncdc.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d1950_c20210803.csv.gz");
+        var client = new WebClientAdapter();
+        var waiter = new ManualResetEventSlim();
+
+        using (waiter)
+        {
+            client.InvalidUrlRequested += (sender, args) =>
+            {
+                var oldColor = Console.BackgroundColor;
+                Console.BackgroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine($"Invalid URL {args}");
+                Console.BackgroundColor = oldColor;
+            };
+
+            client.DownloadProgressChanged += (sender, args) =>
+            {
+                Console.WriteLine($"Downloading... {args.ProgressPercentage}% complete ({args.BytesReceived:NO})");
+            };
+        }
     }
 }

@@ -5,9 +5,15 @@ using System.Threading.Tasks;
 
 namespace WebFileDownloader
 {
-    public class DownloadProgressChangedEventArgs
+    public class DownloadProgressChangedEventArgs : System.EventArgs
     {
-        public int ProgressPercentage { get; set; } = 0;
-        public int BytesReceived { get; set; } = 0;
+        public int ProgressPercentage { get; init; } = 0;
+        public long BytesReceived { get; init; } = 0;
+
+        public DownloadProgressChangedEventArgs(int progressPercentage, long bytesReceived)
+        {
+            ProgressPercentage = progressPercentage;
+            BytesReceived = bytesReceived;
+        }
     }
 }

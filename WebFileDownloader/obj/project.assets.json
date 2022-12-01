@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\malmm\\.nuget\\packages\\": {}
+    "/Users/Dev/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\malmm\\dev\\WebFileDownloader\\WebFileDownloader\\WebFileDownloader.csproj",
+      "projectUniqueName": "/Users/Dev/dev/WebFileDownloader/WebFileDownloader/WebFileDownloader.csproj",
       "projectName": "WebFileDownloader",
-      "projectPath": "C:\\Users\\malmm\\dev\\WebFileDownloader\\WebFileDownloader\\WebFileDownloader.csproj",
-      "packagesPath": "C:\\Users\\malmm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\malmm\\dev\\WebFileDownloader\\WebFileDownloader\\obj\\",
+      "projectPath": "/Users/Dev/dev/WebFileDownloader/WebFileDownloader/WebFileDownloader.csproj",
+      "packagesPath": "/Users/Dev/.nuget/packages/",
+      "outputPath": "/Users/Dev/dev/WebFileDownloader/WebFileDownloader/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\malmm\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/Dev/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -54,12 +54,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.11, 6.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.osx-x64",
+            "version": "[6.0.11, 6.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.11, 6.0.11]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
       }
     }
   }

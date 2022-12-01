@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ZjxpjfCcl/Jo90bi8TqyH1xOPJ0Q4lD+BK2ICHlnOJlhN6+1k9D4BAzrhuQ4H+0M83xBBJ6dq1z4w/HF/bVdVQ==",
+  "dgSpecHash": "dNppZNnEMYHm9vLzMtqCepFDIyBq0SWTMdFzcYpcfGpaL4BMYQsIpho+neDByx2BuPdcBlcvmw4sPTBcS5RNSQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\malmm\\dev\\WebFileDownloader\\WebFileDownloader\\WebFileDownloader.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/Dev/dev/WebFileDownloader/WebFileDownloader/WebFileDownloader.csproj",
+  "expectedPackageFiles": [
+    "/Users/Dev/.nuget/packages/microsoft.netcore.app.ref/6.0.11/microsoft.netcore.app.ref.6.0.11.nupkg.sha512",
+    "/Users/Dev/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.11/microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512",
+    "/Users/Dev/.nuget/packages/microsoft.netcore.app.host.osx-x64/6.0.11/microsoft.netcore.app.host.osx-x64.6.0.11.nupkg.sha512"
+  ],
   "logs": []
 }
