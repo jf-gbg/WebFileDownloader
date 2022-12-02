@@ -9,11 +9,11 @@ public class Program
 
     public static void Main()
     {
-        webClientAdapter.DownloadCompleted += DownloadCompleted;
+        Download("https://www1.ncdc.noaa.gov/pub/data/swdi/stormevents/csvfiles");
         Console.ReadLine();
     }
 
-    private static void Download(string url, string destination)
+    private static void Download(string url)
     {
         var client = new WebClientAdapter();
         var waiter = new ManualResetEventSlim();
@@ -32,6 +32,24 @@ public class Program
             {
                 Console.WriteLine($"Downloading... {args.ProgressPercentage}% complete ({args.BytesReceived:NO})");
             };
+
+            client.DownloadCompleted += (sender, args) => 
+            {
+                Console.WriteLine($"Download file");
+                waiter.Set();
+            };
+
+            Console.WriteLine($"Downloading {url}");
+            var request = client.DownloadFile(url);
+            if (request == null)
+                return;
+            using (request)
+            {
+                if(!waiter.Wait(TimeSpan.FromSeconds(10D)))
+                {
+                    Console.WriteLine($"Timedout downloading {url}");
+                }
+            }
         }
     }
 }

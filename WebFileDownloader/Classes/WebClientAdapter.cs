@@ -40,21 +40,5 @@ namespace WebFileDownloader.Classes
 
                 return client;
         }
-
-        private static void DownloadProgressCallback4(object sender, DownloadProgressChangedEventArgs e)
-        {
-            // Displays the operation identifier, and the transfer progress.
-            Console.WriteLine("{0}    downloaded {1} of {2} bytes. {3} % complete...",
-                e.BytesReceived,
-                e.ProgressPercentage);
-        }
-        private static void DownloadProgressCallback(object sender, DownloadProgressChangedEventArgs e)
-        {
-            Console.WriteLine($"{0} bytes downloaded. {1}% complete.",
-                e.BytesReceived,
-                e.ProgressPercentage);
-            
-        }
-
     }
 }
